@@ -65,6 +65,10 @@ hr{
     min-height: 20vh;
 }
 
+.form-hidden{
+    display: none;
+}
+
 /*note to self: @media useful for scaling to mobile devices*/
 @media (max-width: 950px){
     .event-featured div{
