@@ -4,6 +4,11 @@
     background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
 }
 
+.bg-custom{
+    background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+}
+
 a, p, h1, h2, h3, h4, h5, h6{
     font-family: Raleway;
 }
@@ -67,6 +72,12 @@ hr{
 
 .form-hidden{
     display: none;
+}
+
+.footer{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;
+    background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
 }
 
 /*note to self: @media useful for scaling to mobile devices*/
