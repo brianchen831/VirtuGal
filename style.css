@@ -26,6 +26,10 @@ body {
     overflow-x: hidden;
 }
 
+.home-text{
+    margin-left: 30%; margin-right: 30%;
+}
+
 .div-bg {
     height: 75vh;
     background-size: cover;
@@ -165,8 +169,22 @@ hr {
         background-color: #3f0d12;
         background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     }
+
+    .home-text{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .ex-txta{
+        min-height: 25vh;
+    }
 }
 
+@media(max-width: 500px){
+    .ex-txta{
+        min-height: 30vh;
+    }
+}
 
 .carousel-fade .carousel-item-next.carousel-item-start,.carousel-fade .carousel-item-prev.carousel-item-end,.carousel-fade .carousel-item.active
 {z-index:2;opacity:1}
