@@ -23,6 +23,11 @@
                                 EVENTS
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="community.html">
+                                COMMUNITY
+                            </a>
+                        </li>
                     </ul>
                     <hr>
                     <ul class="navbar-nav mb-2 mb-lg-0">
@@ -74,80 +79,75 @@
 
 <body>
 
-    <main class="my-5">
-        <div class="container">
+    <div class="container my-5">
+        
+        <h2 class="mb-5">UPCOMING EVENTS</h2>
 
-            <section class="text-md-start">
-                <h2 class="mb-5">UPCOMING EVENTS</h2>
-
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div>
-                            <img src="home-event-abstract.jpg" class="img-fluid">
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 mb-4">
-                        <h5>EVENT: ABSTRACT ART SHOWCASE</h5>
-                        <p>
-                            In this event, presenters share and explain their abstract pieces. They will each have a 15
-                            minute
-                            time slot to talk (although they can end any time they want). This event was created in
-                            order to
-                            people realize the beauty of abstract art.
-                        </p>
-                        <a href="event-abstract.html">
-                            <input value="VIEW DETAILS" type="button" class="btn btn-lg btn-outline-dark ml-0">
-                        </a>
-                    </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div>
+                    <img src="home-event-abstract.jpg" class="img-fluid">
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div>
-                            <img src="home-event-sketch.jpg" class="img-fluid">
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 mb-4">
-                        <h5>EVENT: SKETCH COMPETITION</h5>
-                        <p>
-                            This event will be a competition with 3 rounds. Each round, participants are given 20
-                            minutes to
-                            complete a sketch according to a theme given by judges. After each round, participants
-                            submit their
-                            sketch to be graded. Whoever receives the highest grade from the judges is the winner of the
-                            competition!
-                        </p>
-                        <a href="event-sketch.html">
-                            <input value="VIEW DETAILS" type="button" class="btn btn-lg btn-outline-dark ml-0">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div>
-                            <img src="home-event-painting.jpg" class="img-fluid">
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 mb-4">
-                        <h5>EVENT: PAINTING GALLERY</h5>
-                        <p>
-                            In this event, we will be viewing and appreciating user-submitted paintings. After this,
-                            there will
-                            be a silent auction in which paintings can be bought.
-                        </p>
-                        <a href="event-painting.html">
-                            <input value="VIEW DETAILS" type="button" class="btn btn-lg btn-outline-dark ml-0">
-                        </a>
-                    </div>
-                </div>
-
-            </section>
+            <div class="col-md-8 mb-4">
+                <h5>EVENT: ABSTRACT ART SHOWCASE</h5>
+                <p>
+                    In this event, presenters share and explain their abstract pieces. They will each have a 15
+                    minute
+                    time slot to talk (although they can end any time they want). This event was created in
+                    order to
+                    people realize the beauty of abstract art.
+                </p>
+                <a href="event-abstract.html">
+                    <input value="VIEW DETAILS" type="button" class="btn btn-lg btn-outline-dark ml-0">
+                </a>
+            </div>
         </div>
-    </main>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div>
+                    <img src="home-event-sketch.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-md-8 mb-4">
+                <h5>EVENT: SKETCH COMPETITION</h5>
+                <p>
+                    This event will be a competition with 3 rounds. Each round, participants are given 20
+                    minutes to
+                    complete a sketch according to a theme given by judges. After each round, participants
+                    submit their
+                    sketch to be graded. Whoever receives the highest grade from the judges is the winner of the
+                    competition!
+                </p>
+                <a href="event-sketch.html">
+                    <input value="VIEW DETAILS" type="button" class="btn btn-lg btn-outline-dark ml-0">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div>
+                    <img src="home-event-painting.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-md-8 mb-4">
+                <h5>EVENT: PAINTING GALLERY</h5>
+                <p>
+                    In this event, we will be viewing and appreciating user-submitted paintings. After this,
+                    there will
+                    be a silent auction in which paintings can be bought.
+                </p>
+                <a href="event-painting.html">
+                    <input value="VIEW DETAILS" type="button" class="btn btn-lg btn-outline-dark ml-0">
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div class="div-bg3 mt-5">
         <h1 style="text-align: center">HOST AN EVENT</h1>
@@ -159,7 +159,7 @@
                     <label class="form-label">
                         <font font face="Raleway">Event</font>
                     </label>
-                    <input class="form-control" placeholder="Event Title" />
+                    <input class="form-control" placeholder="Event Title" type="text"/>
                 </div>
                 <div class="form px-5">
                     <div class="row">
@@ -176,14 +176,14 @@
                     </div>
                 </div>
                 <div class="form mb-2 px-5" style="display: flex">
-                    <input class="form-control" placeholder="Event Date/Time" style="width: 49%; margin-right: 2%" />
-                    <input class="form-control" placeholder="Event Length" style="width: 49%" />
+                    <input class="form-control" placeholder="Event Date/Time" style="width: 49%; margin-right: 2%" type="text"/>
+                    <input class="form-control" placeholder="Event Length" style="width: 49%" type="text"/>
                 </div>
                 <div class="form mb-2 px-5">
                     <label class="form-label">
                         <font font face="Raleway">Other</font>
                     </label>
-                    <textarea class="form-control" placeholder="Other" style="height: 15vh"></textarea>
+                    <textarea class="form-control" placeholder="Other" style="height: 15vh" type="text"></textarea>
                 </div>
                 <div class="text-center py-2 px-5">
                     <a>
@@ -230,7 +230,7 @@
                         <label class="form-label">
                             <font font face="Raleway">Event</font>
                         </label>
-                        <input class="form-control disabled" value="Sketch Competition" />
+                        <input class="form-control disabled" value="Sketch Competition" type="text"/>
                     </div>
                     <div class="form px-5">
                         <div class="row">
@@ -248,15 +248,15 @@
                     </div>
                     <div class="form mb-2 px-5" style="display: flex">
                         <input class="form-control disabled" style="width: 49%; margin-right: 2%"
-                            value="April 4th, 3PM" />
-                        <input class="form-control disabled" style="width: 49%" value="1 hour 30 minutes" />
+                            value="April 4th, 3PM" type="text"/>
+                        <input class="form-control disabled" style="width: 49%" value="1 hour 30 minutes" type="text"/>
                     </div>
                     <div class="form mb-2 px-5">
                         <label class="form-label">
                             <font font face="Raleway">Other</font>
                         </label>
                         <textarea class="form-control ex-txta" style="height:auto; overflow-y: hidden"
-                        maxlength="0">This event will be a competition with 3 rounds. Each round, participants are given 20 minutes to complete a sketch according to a theme given by judges. After each round, participants submit their sketch to be graded. Whoever receives the highest grade from the judges is the winner of the competition!
+                        maxlength="0" type="text">This event will be a competition with 3 rounds. Each round, participants are given 20 minutes to complete a sketch according to a theme given by judges. After each round, participants submit their sketch to be graded. Whoever receives the highest grade from the judges is the winner of the competition!
                         </textarea>
                     </div>
                     <div class="text-center py-2 px-5">

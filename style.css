@@ -18,8 +18,16 @@ h4,
 h5,
 h6,
 label,
-li {
+li,
+::placeholder
+{
     font-family: Raleway;
+}
+
+input[type="text"],
+textarea[type="text"]{
+    font-family: Raleway;
+    color: #000 !important;
 }
 
 body {
