@@ -22,6 +22,11 @@
                             EVENTS
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="community.html">
+                            COMMUNITY
+                        </a>
+                    </li>
                 </ul>
                 <hr>
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -58,16 +63,108 @@
     <!-- Raleway Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
+    <!-- Montserrat Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
 </head>
 
 <html>
 
 <body>
 
+    <div class="countdown-header" style="background-image: url(home-event-sketch.jpg)">
+        <div class="position-absolute mb-4 p-4" 
+        style="top: 18%; transform: translateY(-50%); left: 50%; transform: translateX(-50%)">
+
+        <h3 class="text-white text-center coming-soon-text">COMING SOON</h3>
+
+            <div class="border border-light text-white mt-2 mb-4 py-3 px-5 text-center">
+                <h3 id="days" class="d-inline"></h3>
+                <h3 id="hours" class="d-inline"></h3>
+                <h3 id="mins" class="d-inline"></h3>
+                <h3 id="secs" class="d-inline"></h3>
+                <h3 id="end" class="d-inline"></h3>
+                <script>
+
+                    var countDownDate = new Date("July 1, 2022 10:00:00").getTime();
+        
+                    var countDown = setInterval(function() {
+        
+                    var now = new Date().getTime();
+                    var timeleft = countDownDate - now;
+        
+                    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+        
+                    document.getElementById("days").innerHTML = days + "d "
+                    document.getElementById("hours").innerHTML = hours + "h " 
+                    document.getElementById("mins").innerHTML = minutes + "m " 
+                    document.getElementById("secs").innerHTML = seconds + "s " 
+                        
+                    if (timeleft < 0) {
+                        clearInterval(countDown);
+                        document.getElementById("days").innerHTML = ""
+                        document.getElementById("hours").innerHTML = "" 
+                        document.getElementById("mins").innerHTML = ""
+                        document.getElementById("secs").innerHTML = ""
+                        document.getElementById("end").innerHTML = "EVENT LIVE";
+                    }
+                    }, 1000);
+
+                </script>
+            </div>
+
+            <h5 class="text-white text-center mt-n2 date-text">This event will be held on
+            <br> July 1st, 2022 at 10:00am</h3>
+                
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 gx-5 mb-4">
+                <img src="home-image2.jpg"
+                    class="img-fluid mb-3"/>
+            </div>
+            <div class="col-md-6 gx-5 mb-4">
+                <h4>Excepteur sint occaecat</h4>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat.
+                </p>
+                <hr class="mb-3">
+                <h4>Lectus sit amet est placerat</h4>
+                <p class="text-muted">
+                    Sit amet venenatis urna cursus eget nunc scelerisque viverra. Felis eget velit aliquet sagittis id 
+                    consectetur purus. Ornare aenean euismod elementum nisi.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-3 gx-5 mb-4">
+                <div class="hexagon hexagon1 mb-5"><div class="hexagon-in1"><div class="hexagon-in2-1"></div></div></div>  
+            </div>
+            <div class="col-md-3 gx-5 my-5">
+                <div class="hexagon hexagon1 my-5"><div class="hexagon-in1"><div class="hexagon-in2-2"></div></div></div>  
+            </div>
+            <div class="col-md-3 gx-5 mb-4">
+                <div class="hexagon hexagon1 mb-5"><div class="hexagon-in1"><div class="hexagon-in2-3"></div></div></div>  
+            </div>
+            <div class="col-md-3 gx-5 my-5">
+                <div class="hexagon hexagon1 my-5"><div class="hexagon-in1"><div class="hexagon-in2-4"></div></div></div>  
+            </div>
+        </div>
+        
+    </div>
+
     
 
     <footer>
-        <div class="footer">
+        <div class="footer mt-n5">
             <div class="text-center p-3 text-white footer">
                 <p class="mb-0">VirtuGal | Webmaster | TSA</p>
             </div>
