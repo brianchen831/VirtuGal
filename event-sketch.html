@@ -49,17 +49,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- MDBootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    
+
     <!-- Raleway Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
@@ -73,10 +73,10 @@
 <body>
 
     <div class="countdown-header" style="background-image: url(home-event-sketch.jpg)">
-        <div class="position-absolute mb-4 p-4" 
-        style="top: 18%; transform: translateY(-50%); left: 50%; transform: translateX(-50%)">
+        <div class="position-absolute mb-4 p-4"
+            style="top: 18%; transform: translateY(-50%); left: 50%; transform: translateX(-50%)">
 
-        <h3 class="text-white text-center coming-soon-text">COMING SOON</h3>
+            <h3 class="text-white text-center coming-soon-text">COMING SOON</h3>
 
             <div class="border border-light text-white mt-2 mb-4 py-3 px-5 text-center">
                 <h3 id="days" class="d-inline"></h3>
@@ -87,85 +87,101 @@
                 <script>
 
                     var countDownDate = new Date("July 1, 2022 10:00:00").getTime();
-        
-                    var countDown = setInterval(function() {
-        
-                    var now = new Date().getTime();
-                    var timeleft = countDownDate - now;
-        
-                    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-        
-                    document.getElementById("days").innerHTML = days + "d "
-                    document.getElementById("hours").innerHTML = hours + "h " 
-                    document.getElementById("mins").innerHTML = minutes + "m " 
-                    document.getElementById("secs").innerHTML = seconds + "s " 
-                        
-                    if (timeleft < 0) {
-                        clearInterval(countDown);
-                        document.getElementById("days").innerHTML = ""
-                        document.getElementById("hours").innerHTML = "" 
-                        document.getElementById("mins").innerHTML = ""
-                        document.getElementById("secs").innerHTML = ""
-                        document.getElementById("end").innerHTML = "EVENT LIVE";
-                    }
+
+                    var countDown = setInterval(function () {
+
+                        var now = new Date().getTime();
+                        var timeleft = countDownDate - now;
+
+                        var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+                        document.getElementById("days").innerHTML = days + "d "
+                        document.getElementById("hours").innerHTML = hours + "h "
+                        document.getElementById("mins").innerHTML = minutes + "m "
+                        document.getElementById("secs").innerHTML = seconds + "s "
+
+                        if (timeleft < 0) {
+                            clearInterval(countDown);
+                            document.getElementById("days").innerHTML = ""
+                            document.getElementById("hours").innerHTML = ""
+                            document.getElementById("mins").innerHTML = ""
+                            document.getElementById("secs").innerHTML = ""
+                            document.getElementById("end").innerHTML = "EVENT LIVE";
+                        }
                     }, 1000);
 
                 </script>
             </div>
 
             <h5 class="text-white text-center mt-n2 date-text">This event will be held on
-            <br> July 1st, 2022 at 10:00am</h3>
-                
+                <br> July 1st, 2022 at 10:00am</h3>
+
         </div>
     </div>
 
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 gx-5 mb-4">
-                <img src="home-image2.jpg"
-                    class="img-fluid mb-3"/>
+                <img src="home-image2.jpg" class="img-fluid mb-3" />
             </div>
             <div class="col-md-6 gx-5 mb-4">
                 <h4>Excepteur sint occaecat</h4>
                 <p class="text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
                     ex ea commodo consequat.
                 </p>
                 <hr class="mb-3">
                 <h4>Lectus sit amet est placerat</h4>
                 <p class="text-muted">
-                    Sit amet venenatis urna cursus eget nunc scelerisque viverra. Felis eget velit aliquet sagittis id 
+                    Sit amet venenatis urna cursus eget nunc scelerisque viverra. Felis eget velit aliquet sagittis id
                     consectetur purus. Ornare aenean euismod elementum nisi.
                 </p>
+                <a href="purchase-sketch.html">
+                    <input value="buy tickets" type="button" class="btn btn-outline-dark ml-0">
+                </a>
             </div>
         </div>
 
         <div class="row mt-3">
             <div class="col-md-3 gx-5 mb-5">
-                <div class="hexagon hexagon1 mb-5"><div class="hexagon-in1"><div class="hexagon-in2"
-                    style="background-image: url('sketch1.jpg')"></div></div></div>  
+                <div class="hexagon hexagon1 mb-5">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url('sketch1.jpg')"></div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3 gx-5 my-5">
-                <div class="hexagon hexagon1 my-5"><div class="hexagon-in1"><div class="hexagon-in2"
-                    style="background-image: url('sketch2.jpg')"></div></div></div>  
+                <div class="hexagon hexagon1 my-5">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url('sketch2.jpg')"></div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3 gx-5 mb-5">
-                <div class="hexagon hexagon1 mb-5"><div class="hexagon-in1"><div class="hexagon-in2"
-                    style="background-image: url('sketch3.jpg')"></div></div></div>  
+                <div class="hexagon hexagon1 mb-5">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url('sketch3.jpg')"></div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3 gx-5 my-5">
-                <div class="hexagon hexagon1 my-5"><div class="hexagon-in1"><div class="hexagon-in2"
-                    style="background-image: url('sketch4.jpg')"></div></div></div>  
+                <div class="hexagon hexagon1 my-5">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url('sketch4.jpg')"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
     </div>
 
-    
+
 
     <footer>
         <div class="footer mt-n5">
