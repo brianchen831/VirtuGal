@@ -59,17 +59,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- MDBootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    
+
     <!-- Raleway Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
@@ -80,7 +80,7 @@
 <body>
 
     <div class="container my-5">
-        
+
         <h2 class="mb-5">UPCOMING EVENTS</h2>
 
         <div class="row">
@@ -159,7 +159,7 @@
                     <label class="form-label">
                         <font font face="Raleway">Event</font>
                     </label>
-                    <input class="form-control" placeholder="Event Title" type="text"/>
+                    <input class="form-control" placeholder="Event Title" type="text" />
                 </div>
                 <div class="form px-5">
                     <div class="row">
@@ -176,26 +176,37 @@
                     </div>
                 </div>
                 <div class="form mb-2 px-5" style="display: flex">
-                    <input class="form-control" placeholder="Event Date/Time" style="width: 49%; margin-right: 2%" type="text"/>
-                    <input class="form-control" placeholder="Event Length" style="width: 49%" type="text"/>
+                    <input class="form-control" placeholder="Event Date/Time" style="width: 49%; margin-right: 2%"
+                        type="text" />
+                    <input class="form-control" placeholder="Event Length" style="width: 49%" type="text" />
                 </div>
                 <div class="form mb-2 px-5">
                     <label class="form-label">
-                        <font font face="Raleway">Other</font>
+                        <font font face="Raleway">Description/Process</font>
                     </label>
-                    <textarea class="form-control" placeholder="Other" style="height: 15vh" type="text"></textarea>
+                    <textarea class="form-control" placeholder="Event Description/Process" style="height: 15vh" type="text"></textarea>
                 </div>
                 <div class="text-center py-2 px-5">
                     <a>
-                        <input value="SUBMIT" class="btn btn-outline-dark btn-block mb-3" type="button"
-                        onclick="submit()">
-                        
+                        <input value="SUBMIT" class="btn btn-outline-dark btn-block mb-3" type="button" id="submitButton"
+                            onclick="submit()">
+
                     </a>
-                    <script>    
-                        function submit(){
-                            
+                    <script>
+                        function submit() {
+                            const submitAlert = document.querySelector("#submitAlert");
+                            submitAlert.classList.remove("form-hidden"); 
+                            const submitButton = document.querySelector("#submitButton");
+                            submitButton.classList.add("disabled");
                         }
                     </script>
+                </div>
+                <div class="form-hidden alert alert-secondary alert-dismissible fade show mb-3" id="submitAlert"
+                style="width: 80%; margin: auto">
+                    <p class="mb-0">Thank you for submitting! We will review your submission shortly.</p>
+                    <button type="button" class="closeButton" data-dismiss="alert" style="padding: 0.75rem">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             </div>
             <div class="col-lg-3"></div>
@@ -230,7 +241,7 @@
                         <label class="form-label">
                             <font font face="Raleway">Event</font>
                         </label>
-                        <input class="form-control disabled" value="Sketch Competition" type="text"/>
+                        <input class="form-control disabled" value="Sketch Competition" type="text" />
                     </div>
                     <div class="form px-5">
                         <div class="row">
@@ -247,15 +258,16 @@
                         </div>
                     </div>
                     <div class="form mb-2 px-5" style="display: flex">
-                        <input class="form-control disabled" style="width: 49%; margin-right: 2%"
-                            value="April 4th, 3PM" type="text"/>
-                        <input class="form-control disabled" style="width: 49%" value="1 hour 30 minutes" type="text"/>
+                        <input class="form-control disabled" style="width: 49%; margin-right: 2%" value="April 4th, 3PM"
+                            type="text" />
+                        <input class="form-control disabled" style="width: 49%" value="1 hour 30 minutes" type="text" />
                     </div>
                     <div class="form mb-2 px-5">
                         <label class="form-label">
-                            <font font face="Raleway">Other</font>
+                            <font font face="Raleway">Description/Process</font>
                         </label>
-                        <textarea class="form-control disabled ex-txta" style="height:auto; overflow-y: hidden" type="text">This event will be a competition with 3 rounds. Each round, participants are given 20 minutes to complete a sketch according to a theme given by judges. After each round, participants submit their sketch to be graded. Whoever receives the highest grade from the judges is the winner of the competition!
+                        <textarea class="form-control disabled ex-txta" style="height:auto; overflow-y: hidden"
+                            type="text">This event will be a competition with 3 rounds. Each round, participants are given 20 minutes to complete a sketch according to a theme given by judges. After each round, participants submit their sketch to be graded. Whoever receives the highest grade from the judges is the winner of the competition!
                         </textarea>
                     </div>
                     <div class="text-center py-2 px-5">
@@ -284,6 +296,7 @@
         </div>
 
     </div>
+
     <footer>
         <div class="footer">
             <div class="text-center p-3 text-white footer">
