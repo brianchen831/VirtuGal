@@ -165,7 +165,12 @@ hr {
 }
 
 /*note to self: @media useful for scaling to mobile devices*/
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
+    .ex-txta {
+        min-height: 25vh;
+    }
+}
+@media (max-width: 990px) {
     .event-featured div {
         width: 100%;
         padding: 8px 15px;
@@ -182,10 +187,6 @@ hr {
     .home-text {
         margin-left: 10%;
         margin-right: 10%;
-    }
-
-    .ex-txta {
-        min-height: 25vh;
     }
 
     .date-text {
