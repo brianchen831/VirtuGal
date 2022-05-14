@@ -159,7 +159,7 @@
                     <label class="form-label">
                         <font font face="Raleway">Event</font>
                     </label>
-                    <input class="form-control" placeholder="Event Title" type="text" />
+                    <input class="form-control" placeholder="Event Title" type="text" id="form-text1"/>
                 </div>
                 <div class="form px-5">
                     <div class="row">
@@ -176,15 +176,17 @@
                     </div>
                 </div>
                 <div class="form mb-2 px-5" style="display: flex">
-                    <input class="form-control" placeholder="Event Date/Time" style="width: 49%; margin-right: 2%"
+                    <input class="form-control" placeholder="Event Date/Time" style="width: 49%; margin-right: 2%" 
+                        id="form-text2"
                         type="text" />
-                    <input class="form-control" placeholder="Event Length" style="width: 49%" type="text" />
+                    <input class="form-control" placeholder="Event Length" style="width: 49%" type="text" id="form-text3"/>
                 </div>
                 <div class="form mb-2 px-5">
                     <label class="form-label">
                         <font font face="Raleway">Description/Process</font>
                     </label>
-                    <textarea class="form-control" placeholder="Event Description/Process" style="height: 15vh" type="text"></textarea>
+                    <textarea class="form-control" placeholder="Event Description/Process" style="height: 15vh" type="text"
+                    id="form-text4"></textarea>
                 </div>
                 <div class="text-center py-2 px-5">
                     <a>
@@ -198,6 +200,14 @@
                             submitAlert.classList.remove("form-hidden"); 
                             const submitButton = document.querySelector("#submitButton");
                             submitButton.classList.add("disabled");
+                            const formText1 = document.querySelector("#form-text1");
+                            formText1.classList.add("disabled");
+                            const formText2 = document.querySelector("#form-text2")
+                            formText2.classList.add("disabled")
+                            const formText3 = document.querySelector("#form-text3")
+                            formText3.classList.add("disabled")
+                            const formText4 = document.querySelector("#form-text4")
+                            formText4.classList.add("disabled")
                         }
                     </script>
                 </div>
