@@ -1,0 +1,93 @@
+   
+<html lang="en">
+    <head>
+      <title>Submit Art</title>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
+    </head>
+  </html>
+  
+  <!DOCTYPE html>
+  <html>
+  <body>
+    <div style="width: 100%; position: absolute; margin: auto; top: 50%; transform:translateY(-50%)">
+        <div class="row py-5 d-flex justify-content-center align-items-center">
+            <div class="col-xl-10">
+                <div class="card text-black">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card-body p-md-3 mx-md-2" id="login">
+                                <div class="text-center">
+                                    <h1></br> </br> <font face="Didot">VIRTUGAL</font></br></br></h1>
+                                <h4 class="mt-1 mb-3 pb-1"><font font face="Raleway">SUBMIT ART</font></h4>
+                                </div>
+                                    <div class="form mb-2 px-5">
+                                        <label class="form-label"><font font face="Raleway">Username</font></label>
+                                        <input type="username" class="form-control" id="user-name-id" placeholder="Username"/>
+                                    </div>
+                                    <div class="form mb-2 px-5">
+                                        <label class="form-label"><font font face="Raleway">Title</font></label>
+                                        <input type="title" class="form-control" id="title-id" placeholder="Title"/>
+                                    </div>
+                                    <div class="form mb-2 px-5">
+                                      <label class="form-label"><font font face="Raleway">Description</font></label>
+                                      <br>
+                                      <textarea type="description" class="form-control" id="description-id" placeholder="Description"></textarea>
+                                    </div>
+                                    <div class="form mb-2 px-5">
+                                      <label class="form-label"><font font face="Raleway">Your Artwork</font></label>
+                                      <br>
+                                      <input class="mb-2" type="file" name="upload" id="input-file-select" accept="image/png, image/gif, image/jpeg"/>
+                                    </div>
+                                    <div class="text-center py-1 mb-3 px-5">
+                                      <button class="btn btn-primary btn-block fa-lg mb-3" type="button" id="art-submit-btn"
+                                      style="background-image:linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);">Submit</button>
+                                      <label id="upload-progress"></label>
+                                    </div>
+                                    <script type="module" src="submissions.js" ></script>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 d-flex align-items-center" style="background-image:linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);">
+                            <div class="text-white px-1 py-2 p-md-3 mx-md-2">
+                                <h2 class="mb-2"><font font face="Raleway">RULES AND INFORMATION</font></h2>
+                                <p class="small mb-2"><font size="4" face="Raleway">Thanks for considering submitting your artwork! 
+                                  We really appreaciate your contributions to our community. However, please ensure your artwork is 
+                                  appropriate for people of all ages. Innapropriate content will not be tolerated and will result 
+                                  in a ban on your account. After you submit, people will immediately be able to view your art
+                                  on our gallery and post comments on it.</font></p>
+  
+                                  <p class="small"> <font size="3" face="Raleway">*Please note that special characters (such as underscores) are not allowed in your name or title*</font></p>
+  
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+  
+                <button class="btn-back btn btn-outline-black btn-sm ml-0" onclick="history.back()"style="position:absolute">
+                    Back
+                </button>
+  
+            </div>
+        </div>
+    </div>
+    </body>
+  </html>
