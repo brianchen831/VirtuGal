@@ -55,17 +55,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- MDBootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    
+
     <!-- Raleway Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
@@ -137,54 +137,53 @@
 
                 <div class="form-outline mt-5" style="width: 25%">
                     <h5>Quantity:</h5>
-                    <input type="number" id="quantity" class="form-control" value="1" min="1" max="999" onclick="getTotal()"/>
+                    <input type="number" id="quantity" class="form-control" value="1" min="1" max="999"
+                        onclick="getTotal()" />
                     <script>
-                        function getTotal(){
+                        function getTotal() {
                             var total = document.getElementById("quantity").value;
-                            total = total*3;
+                            total = total * 3;
                             total = "Total: $" + total + ".00";
 
-                            document.getElementById("total").innerHTML= '<h5 class="total">' + total + '<h5>' ;
-                            document.getElementById("bought").innerHTML= '<p class="mb-0"id="bought">' + 'You have bought a ticket, your total is' +  toatl.substring(7) + '</p>';
+                            document.getElementById("total").innerHTML = '<h5 class="total">' + total + '<h5>';
+                            document.getElementById("bought").innerHTML = '<p class="mb-0"id="bought">' + 'You have bought a ticket, your total is' + toatl.substring(7) + '</p>';
                         }
                     </script>
                 </div>
                 <br>
                 <a>
-                    <input value="BUY TICKET" class="btn btn-outline-dark btn-block mb-3" type="button" id="submitButton"
-                        onclick="submit()">
+                    <input value="BUY TICKET" class="btn btn-outline-dark btn-block mb-3" type="button"
+                        id="submitButton" onclick="submit()">
 
                 </a>
                 <script>
                     function submit() {
                         const submitAlert = document.querySelector("#submitAlert");
-                        submitAlert.classList.remove("form-hidden"); 
+                        submitAlert.classList.remove("form-hidden");
 
                     }
                 </script>
-                                <div class="form-hidden alert alert-secondary alert-dismissible fade show mb-3" id="submitAlert"
-                                style="width: 80%; margin: auto">
-                                    <p class="mb-0"id="bought">Your purchase was a success!</p>
-                                    <button type="button" class="closeButton" data-dismiss="alert" style="padding: 0.75rem">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                            </div>
+                <div class="form-hidden alert alert-secondary alert-dismissible fade show mb-3" id="submitAlert">
+                    <p class="mb-0" id="bought">Your purchase was a success!</p>
+                    <button type="button" class="closeButton" data-dismiss="alert" style="padding: 0.75rem">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <h5 id="total" class="mt-2">Total: $3.00</h5>
-
-                <div class="next-prev">
-                    <a style="float: right" href="purchase-sketch.html"><font font size="4" id="breadcrumb-item"
-                    font color="#000">Next --></font></a>
-                    <span style="float: right">&nbsp | &nbsp</span>
-                    <a style="float: right" href="purchase-painting.html"><font font size="4" id="breadcrumb-item"
-                    font color="#000"><-- Prev</font></a>
+                <div class="next-prev position-absolute" style="bottom: 0; right: 15">
+                    <a href="purchase-painting.html">
+                        <font font size="4" id="breadcrumb-item" font color="#000"><-- Prev</font>
+                    </a>
+                    <span>&nbsp | &nbsp</span>
+                    <a href="purchase-sketch.html">
+                        <font font size="4" id="breadcrumb-item" font color="#000">Next --></font>
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
-
     
-
     <footer>
         <div class="footer">
             <div class="text-center p-3 text-white shadow-5 footer2">
