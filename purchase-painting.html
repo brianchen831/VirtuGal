@@ -148,9 +148,27 @@
                         }
                     </script>
                 </div>
-                <a href="purchase-painting.html">
-                    <input value="buy tickets" type="button" class="btn btn-block btn-outline-dark ml-0 mt-4" style="width: 75%">
+                <br>
+                <a>
+                    <input value="BUY TICKET" class="btn btn-outline-dark btn-block mb-3" type="button" id="submitButton"
+                        onclick="submit()">
+
                 </a>
+                <script>
+                    function submit() {
+                        const submitAlert = document.querySelector("#submitAlert");
+                        submitAlert.classList.remove("form-hidden"); 
+
+                    }
+                </script>
+                                <div class="form-hidden alert alert-secondary alert-dismissible fade show mb-3" id="submitAlert"
+                                style="width: 80%; margin: auto">
+                                    <p class="mb-0"id="bought">Your purchase was a success!</p>
+                                    <button type="button" class="closeButton" data-dismiss="alert" style="padding: 0.75rem">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
                 <h5 id="total" class="mt-2">Total: $5.00</h5>
 
                 <div class="next-prev">
